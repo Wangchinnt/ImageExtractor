@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 80px);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #imagesContainer img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="urlInput" placeholder="Enter URL...">
+        <button onclick="extractImagesFromInputURL()">Extract Images</button>
+
+        <div id="imagesContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
